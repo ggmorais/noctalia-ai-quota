@@ -1,0 +1,4 @@
+{
+  "settings.interval": "Intervalo de consulta (segundos)",
+  "settings.interval.description": "Tempo entre consultas do serviço local. Mínimo 60, máximo 600 segundos. O servidor também publica o último snapshot a cada 15 segundos."
+}

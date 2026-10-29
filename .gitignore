@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+*.log
+auth.json
+credentials.json
+quota-export.json
+snapshot-v*.json

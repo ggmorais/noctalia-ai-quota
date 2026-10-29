@@ -1,0 +1,35 @@
+id = "local/ai-quota"
+name = "AI Quota"
+version = "0.1.1"
+plugin_api = 24
+author = "local"
+license = "MIT"
+icon = "gauge"
+description = "Cotas restantes da OpenAI, Anthropic e OpenCode Go na barra do sistema."
+tags = ["ai", "development", "quota", "indicator"]
+dependencies = ["python3"]
+
+[[setting]]
+key = "interval"
+type = "int"
+label_key = "settings.interval"
+description_key = "settings.interval.description"
+default = 60
+min = 60
+max = 600
+
+[[service]]
+id = "monitor"
+entry = "service.luau"
+
+[[widget]]
+id = "bar"
+entry = "widget.luau"
+
+[[panel]]
+id = "details"
+entry = "panel.luau"
+width = 440
+height = 520
+placement = "floating"
+position = "top_right"
